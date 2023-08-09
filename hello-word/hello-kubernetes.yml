@@ -10,10 +10,10 @@ metadata:
 spec:
   tls:
     - hosts:
-        - hello.maxilog.me
+        - hello.phenix-tech.fr
       secretName: hello-secret-tls
   rules:
-    - host: hello.maxilog.me
+    - host: hello.phenix-tech.fr
       http:
         paths:
           - path: /
