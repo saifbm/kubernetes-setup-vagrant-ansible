@@ -6,13 +6,13 @@ nexus:
 nexusProxy:
   enabled: true
   env:
-    nexusHttpHost: nexus.maxilog.me
-    nexusDockerHost: docker.maxilog.me
+    nexusHttpHost: nexus.phenix-tech.fr
+    nexusDockerHost: docker.phenix-tech.fr
 ingress:
   enabled: true
-  hostRepo: nexus.maxilog.me
+  hostRepo: nexus.phenix-tech.fr
   tls:
-    secretName: nexus.maxilog.me-tls
+    secretName: nexus.phenix-tech.fr-tls
   annotations:
     {
       nginx.ingress.kubernetes.io/rewrite-target: "/",
@@ -23,9 +23,9 @@ ingress:
     }
 ingressDocker:
   enabled: true
-  hostRepo: docker.maxilog.me
+  hostRepo: docker.phenix-tech.fr
   tls:
-    secretName: docker.maxilog.me-tls
+    secretName: docker.phenix-tech.fr-tls
   annotations:
     {
       nginx.ingress.kubernetes.io/rewrite-target: "/",
