@@ -4,13 +4,13 @@ controller:
   ingress:
     enabled: true
     apiVersion: "networking.k8s.io/v1"
-    hostName: "jenkins.maxilog.me"
+    hostName: "jenkins.phenix-tech.fr"
     annotations:
       nginx.ingress.kubernetes.io/rewrite-target: /
       nginx.ingress.kubernetes.io/ssl-redirect: "false"
       kubernetes.io/ingress.class: "nginx"
       cert-manager.io/cluster-issuer: "letsencrypt-prod"
     tls:
-      - secretName: jenkins.maxilog.me-tls
+      - secretName: jenkins.phenix-tech.fr-tls
         hosts:
-          - jenkins.maxilog.me
+          - jenkins.phenix-tech.fr
