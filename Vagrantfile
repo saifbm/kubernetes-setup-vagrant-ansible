@@ -1,6 +1,6 @@
 IMAGE_NAME = "bento/ubuntu-18.04"
 MACHINE_IP = "188.165.254.65"
-NODE_IP = "192.168.50"
+NODE_IP = "192.168.56"
 N = 4
 
 Vagrant.configure("2") do |config|
