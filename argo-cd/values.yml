@@ -10,8 +10,8 @@ server:
       kubernetes.io/ingress.class: "nginx"
       cert-manager.io/cluster-issuer: "letsencrypt-prod"
     hosts:
-      - argocd.maxilog.me
+      - argocd.phenix-tech.fr
     tls:
-      - secretName: argocd.maxilog.me-tls
+      - secretName: argocd.phenix-tech.fr-tls
         hosts:
-          - argocd.maxilog.me
+          - argocd.phenix-tech.fr
