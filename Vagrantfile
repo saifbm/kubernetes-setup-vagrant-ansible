@@ -1,5 +1,5 @@
 IMAGE_NAME = "bento/ubuntu-18.04"
-MACHINE_IP = "94.23.210.20"
+MACHINE_IP = "188.165.254.65"
 NODE_IP = "192.168.50"
 N = 4
 
