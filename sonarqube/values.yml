@@ -1,13 +1,13 @@
 ingress:
   enabled: true
   hosts:
-    - name: sonarqube.maxilog.me
+    - name: sonarqube.phenix-tech.fr
       path: /
       pathType: Prefix
   tls:
-    - secretName: sonarqube.maxilog.me-tls
+    - secretName: sonarqube.phenix-tech.fr-tls
       hosts:
-        - sonarqube.maxilog.me
+        - sonarqube.phenix-tech.fr
   annotations:
     {
       nginx.ingress.kubernetes.io/rewrite-target: "/",
