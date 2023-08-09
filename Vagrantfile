@@ -45,7 +45,7 @@ Vagrant.configure("2") do |config|
     (1..N).each do |i|
         config.vm.define "node-#{i}" do |node|
             node.vm.box = IMAGE_NAME
-            node.vm.network "private_network", ip: "192.168.50.#{i + 10}"
+            node.vm.network "private_network", ip: "192.168.56.#{i + 10}"
             node.vm.hostname = "node-#{i}"
             node.vm.provider "virtualbox" do |v|
                 v.linked_clone = true
