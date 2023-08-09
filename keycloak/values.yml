@@ -9,7 +9,7 @@ ingress:
   apiVersion: networking.k8s.io/v1
   path: /
   pathType: Prefix
-  hostname: auth.maxilog.me
+  hostname: auth.phenix-tech.fr
   tls: true
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
